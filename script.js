@@ -5,7 +5,7 @@ const displayMessage = function (message) {
 }
 
 const generateRandomInteger = function (start, end) {
-    Math.trunc(Math.random() * end) + start;
+    return Math.trunc(Math.random() * end) + start;
 }
 
 const setScore = function (score) {
@@ -19,7 +19,6 @@ const setBackgroundColor = function (backgroundColor) {
 let numberToBeGuessed = generateRandomInteger(1, 20);
 let score = 20;
 let highScore = 0;
-
 
 document.querySelector(".check").addEventListener("click", function () {
     const guess = Number(document.querySelector(".guess").value);
